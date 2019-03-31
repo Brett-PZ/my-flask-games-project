@@ -9,7 +9,7 @@ body {
     background: #339933;
     margin: 0;
 }
-
+/*border radius example followed from: https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius*/
 #container {
     margin: 3em auto;
     max-width: 800px;
