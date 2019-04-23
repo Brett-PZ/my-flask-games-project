@@ -1,0 +1,61 @@
+
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Georgia', serif
+    font-size: 100%;
+    color: #000;
+    background: #339933;
+    margin: 0;
+}
+
+/*border radius example used from: https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius*/
+#container {
+    margin: 3em auto;
+    max-width: 800px;
+    padding: 1.2em 3.2em;
+    background: #99ff99;
+    overflow: auto;
+    border: groove 1em red;
+    border-radius: 2em;
+}
+
+h1 {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 3em;
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+p, li {
+    font-size: 1.8em;
+    line-height: 1em;
+}
+
+a {
+    color: #009;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00b3b3;
+    text-decoration: underline;
+}
+
+/* media queries */
+
+@media (max-width: 800px) {
+    body {
+        background: #339933;
+    }
+    #container {
+        margin: 0;
+        width: 100%;
+        padding: 2em;
+    }
+    h1 {
+        padding: 0 0 0.3em 0;
+    }
+
+}

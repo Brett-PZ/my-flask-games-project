@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>The Sims</title>
+
+	<!-- note the special href for files in the Flask "static" folder -->
+	<link rel="stylesheet" href="../static/css/main.css">
+
+</head>
+<body>
+
+<div id="container">
+
+  <!-- Jinja2 directives: page contents will go between them -->
+  
+
+	<!-- the full dict for a president is sent here as pres by the route -->
+<!--<p> gamesDict['id'] is number, gamesDict['game'] is name of game, gamesDict[platform] is console,gamesDict[released] is date released ,gamesDict[publisher] is publisher, gamesDict['game'] is game-->
+	<h1>The Sims</h1>
+
+
+	<p>The Sims, the number 48 best selling game, was released for Multi Platfom by Electronic Arts on 1/31/2000 and it sold 16000000 copies total.
+
+	</p>
+
+
+	<!-- NOTE the way to link to a route: Use the function name -->
+	<p><a href="../index.html">Return to the list</a> to select a different game.</p>
+
+
+
+</div>
+
+</body>
+</html>
