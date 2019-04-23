@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>The best selling video games of all time</h1>
+
+<p>Click any of the games.</p>
+
+
+
+    <ul>
+    {% for pair in pairs %}
+        <li><a href="{{ url_for( 'detail', num=pair[0] ) }}">{{ pair[1] }}</a></li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

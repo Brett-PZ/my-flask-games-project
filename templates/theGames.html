@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<!-- the full dict for a president is sent here as pres by the route -->
+<!--<p> gamesDict['id'] is number, gamesDict['game'] is name of game, gamesDict[platform] is console,gamesDict[released] is date released ,gamesDict[publisher] is publisher, gamesDict['game'] is game-->
+	<h1>{{ gamesDict['game'] }}</h1>
+
+
+	<p>{{gamesDict['game'] }}, the number {{ gamesDict['id'] }} best selling game, was released for {{gamesDict['platform']}} by {{gamesDict['publisher']}} on {{gamesDict['released']}} and it sold {{gamesDict['sold']}} copies total.
+
+	</p>
+
+
+	<!-- NOTE the way to link to a route: Use the function name -->
+	<p><a href="{{ url_for('index') }}">Return to the list</a> to select a different game.</p>
+
+{% endblock %}
